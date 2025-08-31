@@ -1,0 +1,2 @@
+2025-08-30 23:46:01,639 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for data files: {'../trail_trekker.db'} (connection.py:489)
+2025-08-30 23:46:01,702 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)

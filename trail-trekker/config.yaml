@@ -1,0 +1,7 @@
+gateways:
+  local:
+    connection:
+      type: duckdb
+      database: ../trail_trekker.db
+model_defaults:
+  dialect: duckdb
