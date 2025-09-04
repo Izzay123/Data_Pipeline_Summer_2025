@@ -1,6 +1,10 @@
 MODEL (
     name staging_customers,
-    kind VIEW
+    kind VIEW,
+        audits (
+        not_null(columns := (customer_id))
+
+    )
 );
 
 SELECT
