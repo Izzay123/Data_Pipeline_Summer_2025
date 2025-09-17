@@ -1,6 +1,6 @@
-Model (
-    name  raw_plans,
-    kind seed(
-        path '../../plans.csv'
-    )
-);
+MODEL (
+  name raw_plans,
+  kind SEED (
+    path '../../plans.csv'
+  )
+)
