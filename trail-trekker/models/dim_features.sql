@@ -1,6 +1,6 @@
 MODEL (
     name dim_features,
-    kind SCD_TYPE_1
+    kind view
 );
 
 SELECT
@@ -9,6 +9,5 @@ SELECT
     feature_name,
     feature_description,
     feature_category,
-    CURRENT_TIMESTAMP AS last_updated
 FROM staging_features
 ORDER BY feature_id

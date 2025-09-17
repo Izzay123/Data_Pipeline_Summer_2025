@@ -1,6 +1,6 @@
 MODEL (
     name dim_plans,
-    kind SCD_TYPE_1
+    kind view
 );
 
 SELECT
@@ -13,6 +13,5 @@ SELECT
     photo_storage_gb,
     description,
     created_at,
-    CURRENT_TIMESTAMP AS last_updated
 FROM staging_plans
 ORDER BY plan_id
