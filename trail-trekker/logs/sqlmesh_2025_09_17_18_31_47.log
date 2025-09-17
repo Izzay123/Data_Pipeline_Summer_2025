@@ -1,0 +1,5 @@
+2025-09-17 18:31:48,288 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for data files: {'../trail_trekker.db'} (connection.py:491)
+2025-09-17 18:31:48,331 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0000_baseline' from '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sqlmesh/migrations/v0000_baseline.py'> (migrator.py:186)
+2025-09-17 18:31:48,333 - MainThread - sqlmesh.core.engine_adapter.base - WARNING - Failed to create schema 'sqlmesh': IO Error: Could not set lock on file "/Users/izzay/Desktop/Data_Pipeline_Summer_2025/trail-trekker/../trail_trekker.db": Conflicting lock is held in /Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python (PID 10118) by user izzay. See also https://duckdb.org/docs/stable/connect/concurrency (base.py:1391)
+2025-09-17 18:31:48,335 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Starting migration rollback. (migrator.py:133)
+2025-09-17 18:31:48,342 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)
