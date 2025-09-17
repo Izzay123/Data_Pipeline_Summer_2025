@@ -66,24 +66,24 @@ Ended up making fct_subscription_changes to account for these requests.
 ```
 Data_Pipeline_Summer_2025/
 ├── README.md                    # Project documentation
+├── .gitignore                   # Git ignore rules
 ├── cron_job.sh                 # Automated pipeline execution script
 ├── trail_trekker.db            # DuckDB database file
 ├── *.csv                       # Raw data files (customers, features, plans, etc.)
-├── logs/                       # Pipeline execution logs
+├── advanced_subscription_analysis.py  # Subscription metrics visualization script
+├── advanced_subscription_analysis.png # Generated analysis chart
 └── trail-trekker/             # SQLMesh project
     ├── config.yaml            # SQLMesh configuration
     ├── models/                # SQL transformation models
     │   ├── *_raw.sql         # Raw data models
     │   ├── staging_*.sql     # Staging layer models
+    │   ├── dim_*.sql         # Dimension models
     │   └── fct_*.sql         # Fact table models
     ├── audits/               # Data quality checks
     ├── tests/                # Model tests
     ├── seeds/                # Reference data
     └── macros/               # Reusable SQL functions
 ```
-
-**Next Steps:**
-- Implement data visualization dashboard
 
 **Follow-up Analysis:**
 As a demonstration of AI's effectiveness for summary and analysis tasks, used Claude Code to generate a quick visualization script (`advanced_subscription_analysis.py`) that shows key subscription ratios and metrics to help explain the current subscription makeup of the business.
