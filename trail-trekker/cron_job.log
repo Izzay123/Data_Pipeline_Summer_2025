@@ -1,0 +1,42 @@
+Wed Sep 17 14:27:23 EDT 2025: Starting sqlmesh job
+/Users/izzay/Desktop/Data_Pipeline_Summer_2025/cron_job.sh: line 25: sqlmesh: command not found
+Wed Sep 17 14:27:23 EDT 2025: Finished sqlmesh job
+Wed Sep 17 14:27:37 EDT 2025: No virtual environment found, proceeding without activation
+Wed Sep 17 14:27:37 EDT 2025: Starting sqlmesh job
+/Users/izzay/Desktop/Data_Pipeline_Summer_2025/cron_job.sh: line 24: sqlmesh: command not found
+Wed Sep 17 14:27:37 EDT 2025: Finished sqlmesh job
+Wed Sep 17 14:28:27 EDT 2025: No virtual environment found, proceeding without activation
+Wed Sep 17 14:28:27 EDT 2025: Starting sqlmesh job
+/Library/Frameworks/Python.framework/Versions/3.13/bin/sqlmesh:3: DeprecationWarning: Parsing dates involving a day of month without a year specified is ambiguious
+and fails to parse leap day. The default behavior will change in Python 3.15
+to either always raise an exception or to use a different default year (TBD).
+To avoid trouble, add a specific year to the input & format.
+See https://github.com/python/cpython/issues/70647.
+  from sqlmesh.cli.main import cli
+Error: SQLMesh (local) is using version '0.219.0' which is ahead of '0.211.2' (remote). Please run a migration ('sqlmesh migrate' command).
+Wed Sep 17 14:28:30 EDT 2025: Finished sqlmesh job
+Wed Sep 17 14:28:46 EDT 2025: No virtual environment found, proceeding without activation
+Wed Sep 17 14:28:46 EDT 2025: Starting sqlmesh job
+/Library/Frameworks/Python.framework/Versions/3.13/bin/sqlmesh:3: DeprecationWarning: Parsing dates involving a day of month without a year specified is ambiguious
+and fails to parse leap day. The default behavior will change in Python 3.15
+to either always raise an exception or to use a different default year (TBD).
+To avoid trouble, add a specific year to the input & format.
+See https://github.com/python/cpython/issues/70647.
+  from sqlmesh.cli.main import cli
+Deleted object default__dev
+[1/1] default.staging_customers          [recreate view, audits passed 1]       
+0.01s   
+[1/1] default.staging_features           [recreate view, audits passed 1]       
+0.01s   
+[1/1] default.staging_plans              [recreate view]                        
+0.01s   
+[1/1] default.staging_subscriptions      [recreate view, audits passed 1]       
+0.01s   
+[1/1] default.fct_subscription_changes   [recreate view, audits passed 1]       
+0.01s   
+Executing model batches ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.0% • 5/5 • 0:00:00
+                                                                                Model batches executed
+
+
+Run finished for environment 'prod'
+Wed Sep 17 14:28:47 EDT 2025: Finished sqlmesh job
