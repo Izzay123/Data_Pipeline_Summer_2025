@@ -85,6 +85,9 @@ Data_Pipeline_Summer_2025/
 **Next Steps:**
 - Implement data visualization dashboard
 
+**Follow-up Analysis:**
+As a demonstration of AI's effectiveness for summary and analysis tasks, used Claude Code to generate a quick visualization script (`advanced_subscription_analysis.py`) that shows key subscription ratios and metrics to help explain the current subscription makeup of the business.
+
 ## Who am I?
 
 I'm a data professional diving headfirst into analytics engineering. Started as a data analyst and now I get to head up strategerie(Bush-ism) , at a financial institution. Having recently started using dbt at work, I wanted to get more experience with data modeling and how different tools approach architecture. I'm learning everything here from scratch, with the exception of database concepts, data vizualization, and SQL usage. Give me a shout, good or bad, at https://www.linkedin.com/in/israel-spence/
