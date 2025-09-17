@@ -1,25 +1,19 @@
-Model (
-    name staging_subscriptions,
-    kind view,
-    audits (
-        not_null(columns := (subscription_id, customer_id, plan_id))
-    )
+MODEL (
+  name staging_subscriptions,
+  kind VIEW,
+  audits (
+    NOT_NULL(columns := (subscription_id, customer_id, plan_id))
+  )
 );
 
-select 
-    subscription_id,
-    customer_id,
-    plan_id,
-    billing_cycle,
-    subscription_start_date,
-    coalesce(
-        TRY_CAST(subscription_end_date AS DATE),
-        DATE '1900-01-01'
-    ) as subscription_end_date,
-    status,
-    coalesce(
-        TRY_CAST(next_billing_date AS DATE),
-        DATE '1900-01-01'
-    ) as next_billing_date,
-    payment_method
-from raw_subscriptions
+SELECT
+  subscription_id,
+  customer_id,
+  plan_id,
+  billing_cycle,
+  subscription_start_date,
+  COALESCE(TRY_CAST(subscription_end_date AS DATE), '1900-01-01'::DATE) AS subscription_end_date,
+  status,
+  COALESCE(TRY_CAST(next_billing_date AS DATE), '1900-01-01'::DATE) AS next_billing_date,
+  payment_method
+FROM subscriptions
