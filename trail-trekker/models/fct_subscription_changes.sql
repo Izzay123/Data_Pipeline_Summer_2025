@@ -14,7 +14,8 @@ SELECT
   s.subscription_end_date,
   s.status,
   s.billing_cycle,
-  p.plan_name, /* Plan details */
+  p.plan_name, 
+  --Plan details
   p.price AS monthly_revenue,
   p.plan_level,
   p.max_hikes_per_month,
@@ -22,7 +23,8 @@ SELECT
     WHEN s.subscription_end_date = '1900-01-01'::DATE
     THEN DATE_DIFF('DAY', TRY_CAST(s.subscription_start_date AS DATE), CURRENT_DATE)
     ELSE DATE_DIFF('DAY', TRY_CAST(s.subscription_start_date AS DATE), s.subscription_end_date)
-  END AS subscription_duration_days, /* Calculated metrics */
+  END AS subscription_duration_days, 
+  --calculated metrics
   CASE
     WHEN s.status = 'active' AND s.subscription_end_date = '1900-01-01'::DATE
     THEN TRUE
@@ -34,7 +36,8 @@ SELECT
     WHEN s.billing_cycle = 'yearly'
     THEN p.price * 12
     ELSE p.price
-  END AS total_subscription_value /* Revenue calculation */
+  END AS total_subscription_value 
+  --revenue metrics
 FROM staging_subscriptions AS s
 LEFT JOIN staging_plans AS p
   ON s.plan_id = p.plan_id
